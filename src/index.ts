@@ -1,6 +1,5 @@
 import "./css/style.scss";
 import p5, { Color } from "p5";
-console.log({ ...p5 });
 const sketch = (p: p5) => {
     const COLORS = {
         BACKGROUND: "white",
@@ -18,7 +17,6 @@ const sketch = (p: p5) => {
         p.frameRate(5);
     };
     p.draw = () => {
-        console.log(p.floor(p.random(10)));
         if (p.frameCount % 100 === 0) {
             clearBackground();
         }
